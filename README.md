@@ -113,7 +113,7 @@ Para quando o pré-requisito de um dia ainda não chegou no curso. Requisitos e 
 
 | Dia | Desafio | Feito | Critérios ok | Data |
 |:---:|---|:---:|:---:|:---:|
-| 01 | Conta bancária com extrato | ⬜ | ⬜ | |
+| 01 | [Conta bancária com extrato](dia-01-conta-bancaria/) | ✅ | ✅ | 12/10/2026 |
 | 02 | Calculadora de frete extensível | ⬜ | ⬜ | |
 | 03 | Agenda de consultas | ⬜ | ⬜ | |
 | 04 | Validador de cadastro | ⬜ | ⬜ | |

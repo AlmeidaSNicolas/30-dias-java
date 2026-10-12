@@ -11,12 +11,14 @@ Uma fintech precisa do núcleo de contas correntes. Ainda não há banco de dado
 4. Imprimir o extrato no formato `dd/MM/yyyy HH:mm`, com o saldo após cada lançamento.
 
 **Critérios de aceite**
-- [ ] Saque acima de saldo + limite lança uma exceção de domínio específica e o saldo não muda. *(a exceção foi comprovada no `main`; falta imprimir o extrato antes e depois para provar que o saldo não muda)*
-- [ ] Se a transferência falhar, nenhuma das duas contas é alterada. *(a exceção foi comprovada; falta imprimir os dois extratos antes e depois)*
+- [x] Saque acima de saldo + limite lança uma exceção de domínio específica e o saldo não muda.
+- [x] Se a transferência falhar, nenhuma das duas contas é alterada.
 - [x] Depósito ou saque com valor zero ou negativo é rejeitado.
 - [x] Não existe nenhuma forma de alterar o saldo de fora da classe sem passar pelas regras.
 
 **Restrição:** sem setter de saldo. ✅
+
+Os critérios são provados no `main`: cada cenário imprime o esperado, o obtido e os extratos antes e depois. Os testes com `try/catch` dos critérios 1 a 3 foram escritos pelo Claude, a pedido, por falta de tempo. O restante do código é meu.
 
 ## Modelagem
 
@@ -53,15 +55,15 @@ Uma fintech precisa do núcleo de contas correntes. Ainda não há banco de dado
 | A `Conta` valida o saldo suficiente (no `debitar`) | O `debitar` é privado, então ninguém de fora consegue mexer no saldo sem passar pela validação. |
 | `debitar` e `creditar` privados | Se fossem públicos, alguém de fora poderia registrar um débito com o tipo `DEPOSITO`. |
 | `ValorInvalidoException` unchecked | Valor inválido é bug de quem chama o método. Não faz sentido obrigar todo mundo a tratar com `try/catch`. |
-| `SaldoInsuficienteException` unchecked | *pendente: escrever o motivo* |
+| `SaldoInsuficienteException` unchecked | Não devemos passar para o usuário a responsabilidade por esse erro; quem tem que tratar somos nós. |
 | `transferir` recebe uma `Conta`, não o nome | O saldo e o extrato do destino moram no objeto conta. Um nome (`String`) não tem onde creditar. |
 | Na transferência, débito antes do crédito | Se o débito falha, a exceção interrompe o método antes do crédito, e o `debitar` valida antes de mexer no saldo. Assim nenhuma conta muda. |
 | Projeto Maven multi-module, um módulo por dia | Cada dia compila sozinho, então um dia quebrado não trava os outros. |
 
 ## Pendências
 
-- [ ] Testes dos critérios 1 e 2 no `main` com `try/catch`, imprimindo os extratos antes e depois.
-- [ ] Motivo da `SaldoInsuficienteException` ser unchecked.
+- [x] Testes dos critérios 1 e 2 no `main` com `try/catch`, imprimindo os extratos antes e depois.
+- [x] Motivo da `SaldoInsuficienteException` ser unchecked.
 - [x] Tirar os `throws ValorInvalidoException`, que viraram desnecessários com a exceção unchecked.
 - [ ] Polimentos: tirar o acento de `listaMovimentação`; imprimir a `descricao` no extrato.
 
