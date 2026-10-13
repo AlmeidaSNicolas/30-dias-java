@@ -11,6 +11,7 @@
 
     <modules>
         <module>dia-01-conta-bancaria</module>
+        <module>dia-02-carrinho-compras</module>
     </modules>
 
     <properties>

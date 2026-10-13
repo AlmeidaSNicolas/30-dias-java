@@ -2,13 +2,17 @@
 
 Desafios práticos feitos depois das aulas da [Maratona Java do DevDojo](https://www.youtube.com/@DevDojoBrasil), começando na aula 162 (Coleções / equals).
 
-Cada dia é um **ticket**, como no trabalho: contexto, requisitos e critérios de aceite. Não tem passo a passo: quebrar o problema em tarefas faz parte do desafio.
+Cada dia é um **ticket**, como no trabalho: contexto, requisitos e critérios de aceite. A dificuldade sobe aos poucos:
+
+- **Dias 02 a 10:** temas mais simples, com o ticket **destrinchado** (design pronto) e um **caminho** detalhado (passos na ordem, sem código).
+- **Dias 11 a 20:** design pronto, caminho mais curto. Parte das decisões fica comigo.
+- **Dias 21 a 30:** só o ticket, sem caminho. Quebrar o problema em tarefas faz parte do desafio.
 
 **Início:** 12/10/2026 · **Dedicação:** 1h30+ por dia
 
 ## Regras
 
-1. **Design antes de código.** Antes de abrir a IDE, o README da pasta do dia registra: o que entendi do ticket, as classes que vou criar, quem é responsável por cada regra e a resposta da pergunta de design.
+1. **Ler antes de codar.** Antes de abrir a IDE, leio o Destrinchado e o Caminho do ticket. Se discordar de alguma decisão, discuto antes de codar e o motivo vai para o README do dia.
 2. **Os critérios de aceite são o teste.** O dia só termina quando todos passam, e cada um é provado por uma classe de teste (`main`) que imprime o esperado e o obtido.
 3. **Sem IA gerando código.** IA só para revisão depois de terminar ou para tirar dúvida de conceito. O código é meu.
 4. **Travou mais de 30 minutos?** A dúvida vai para o README, o requisito é quebrado em partes menores e eu ataco a menor. Se não sair, fica como pendência e eu sigo.
@@ -25,7 +29,7 @@ Um repositório só, com uma pasta por dia e vários commits por dia.
 ├── dia-01-conta-bancaria/
 │   ├── README.md              # entendimento, design, decisões, pendências
 │   └── src/
-├── dia-02-frete/
+├── dia-02-carrinho-compras/
 └── ...
 ```
 
@@ -47,7 +51,7 @@ O foco é modelar bem: quem é responsável por cada regra, onde cada validaçã
 | Dia | Desafio | Conceitos |
 |:---:|---|---|
 | 01 | Conta bancária com extrato | Encapsulamento, exceções customizadas, java.time, List |
-| 02 | Calculadora de frete extensível | Interfaces, polimorfismo, aberto/fechado, java.time |
+| 02 | Carrinho de compras | Classes e objetos, `ArrayList`, `BigDecimal`, exceções |
 | 03 | Agenda de consultas | LocalDateTime, Duration, DayOfWeek, validação de domínio |
 | 04 | Validador de cadastro | Pattern/Matcher, String, modelagem de resultado |
 | 05 | Relatório de vendas a partir de CSV | Leitura de arquivo, try-with-resources, parsing, BigDecimal |
@@ -114,7 +118,7 @@ Para quando o pré-requisito de um dia ainda não chegou no curso. Requisitos e 
 | Dia | Desafio | Feito | Critérios ok | Data |
 |:---:|---|:---:|:---:|:---:|
 | 01 | [Conta bancária com extrato](dia-01-conta-bancaria/) | ✅ | ✅ | 12/10/2026 |
-| 02 | Calculadora de frete extensível | ⬜ | ⬜ | |
+| 02 | [Carrinho de compras](dia-02-carrinho-compras/) | ⬜ | ⬜ | |
 | 03 | Agenda de consultas | ⬜ | ⬜ | |
 | 04 | Validador de cadastro | ⬜ | ⬜ | |
 | 05 | Relatório de vendas a partir de CSV | ⬜ | ⬜ | |
