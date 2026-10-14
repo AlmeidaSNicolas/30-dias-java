@@ -118,7 +118,7 @@ Para quando o pré-requisito de um dia ainda não chegou no curso. Requisitos e 
 | Dia | Desafio | Feito | Critérios ok | Data |
 |:---:|---|:---:|:---:|:---:|
 | 01 | [Conta bancária com extrato](dia-01-conta-bancaria/) | ✅ | ✅ | 12/10/2026 |
-| 02 | [Carrinho de compras](dia-02-carrinho-compras/) | ⬜ | ⬜ | |
+| 02 | [Carrinho de compras](dia-02-carrinho-compras/) | ⬜ | ✅ | |
 | 03 | Agenda de consultas | ⬜ | ⬜ | |
 | 04 | Validador de cadastro | ⬜ | ⬜ | |
 | 05 | Relatório de vendas a partir de CSV | ⬜ | ⬜ | |
