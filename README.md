@@ -4,7 +4,7 @@ Desafios práticos feitos depois das aulas da [Maratona Java do DevDojo](https:/
 
 Cada dia é um **ticket**, como no trabalho: contexto, requisitos e critérios de aceite. A dificuldade sobe aos poucos:
 
-- **Dias 02 a 10:** temas mais simples, com o ticket **destrinchado** (design pronto) e um **caminho** detalhado (passos na ordem, sem código).
+- **Dias 02 a 10:** começam concretos e cada dia acrescenta uma ideia nova de design, até chegar em interface no Dia 10. Todos com o ticket **destrinchado** (design pronto) e um **caminho** detalhado (passos na ordem, sem código).
 - **Dias 11 a 20:** design pronto, caminho mais curto. Parte das decisões fica comigo.
 - **Dias 21 a 30:** só o ticket, sem caminho. Quebrar o problema em tarefas faz parte do desafio.
 
@@ -52,22 +52,22 @@ O foco é modelar bem: quem é responsável por cada regra, onde cada validaçã
 |:---:|---|---|
 | 01 | Conta bancária com extrato | Encapsulamento, exceções customizadas, java.time, List |
 | 02 | Carrinho de compras | Classes e objetos, `ArrayList`, `BigDecimal`, exceções |
-| 03 | Agenda de consultas | LocalDateTime, Duration, DayOfWeek, validação de domínio |
-| 04 | Validador de cadastro | Pattern/Matcher, String, modelagem de resultado |
+| 03 | Agenda de consultas | LocalDateTime, Duration, DayOfWeek, exceções |
+| 04 | Validador de cadastro | String, regex básico, classe de resultado |
 | 05 | Relatório de vendas a partir de CSV | Leitura de arquivo, try-with-resources, parsing, BigDecimal |
-| 06 | Estacionamento | Enum com atributos, Duration, regex |
-| 07 | **Fim de semana:** Mini-banco no terminal | Integração, camadas, persistência, Scanner |
+| 06 | Estacionamento | Enum com atributos e métodos, Duration, regex |
+| 07 | **Fim de semana:** Mini-banco no terminal | Camadas, Scanner, salvar e carregar de arquivo |
 
 ### Semana 2: Arquivos, rede e revisão do BotTelegram
 
-O que separa "funciona na minha máquina" de "roda 24/7 sem cair", incluindo dois dias auditando o meu próprio [BotTelegram](https://github.com/AlmeidaSNicolas/BotTelegram).
+O que separa "funciona na minha máquina" de "roda 24/7 sem cair", incluindo um dia auditando o meu próprio [BotTelegram](https://github.com/AlmeidaSNicolas/BotTelegram).
 
 | Dia | Desafio | Conceitos |
 |:---:|---|---|
-| 08 | Organizador da pasta Downloads | Path, Files, PathMatcher, DirectoryStream, logging em arquivo |
-| 09 | Backup incremental compactado | BasicFileAttributes, SimpleFileVisitor, ZipOutputStream/ZipInputStream |
-| 10 | Auditoria do BotTelegram: recursos abertos | try-with-resources, AutoCloseable, JDBC, ciclo de vida de recursos |
-| 11 | Auditoria do BotTelegram: imutabilidade e exceções | Imutabilidade, propagação de exceções, ScheduledExecutorService |
+| 08 | Organizador da pasta Downloads | Path, Files, enum com lista de extensões |
+| 09 | Backup incremental | Files.walk, data de modificação, cópia mantendo a estrutura |
+| 10 | Organizador v2: regras com interface | Interface, polimorfismo, aberto/fechado (reaproveita o Dia 08) |
+| 11 | Auditoria do BotTelegram: recursos abertos e exceções | try-with-resources, AutoCloseable, JDBC, propagação de exceções |
 | 12 | Consulta de CEP com cache local | HttpClient, HttpRequest, timeouts, cache, desserialização |
 | 13 | API de tarefas com HttpServer | HTTP, status codes, separação handler/serviço/repositório |
 | 14 | **Fim de semana:** Monitor de sites | Agendamento, HttpClient, Duration, estado entre execuções |
@@ -119,15 +119,15 @@ Para quando o pré-requisito de um dia ainda não chegou no curso. Requisitos e 
 |:---:|---|:---:|:---:|:---:|
 | 01 | [Conta bancária com extrato](dia-01-conta-bancaria/) | ✅ | ✅ | 12/10/2026 |
 | 02 | [Carrinho de compras](dia-02-carrinho-compras/) | ⬜ | ✅ | |
-| 03 | Agenda de consultas | ⬜ | ⬜ | |
+| 03 | [Agenda de consultas](dia-03-Agenda_Consultas/) | ⬜ | ⬜ | |
 | 04 | Validador de cadastro | ⬜ | ⬜ | |
 | 05 | Relatório de vendas a partir de CSV | ⬜ | ⬜ | |
 | 06 | Estacionamento | ⬜ | ⬜ | |
 | 07 | Mini-banco no terminal | ⬜ | ⬜ | |
 | 08 | Organizador da pasta Downloads | ⬜ | ⬜ | |
-| 09 | Backup incremental compactado | ⬜ | ⬜ | |
-| 10 | Auditoria do BotTelegram: recursos abertos | ⬜ | ⬜ | |
-| 11 | Auditoria do BotTelegram: imutabilidade e exceções | ⬜ | ⬜ | |
+| 09 | Backup incremental | ⬜ | ⬜ | |
+| 10 | Organizador v2: regras com interface | ⬜ | ⬜ | |
+| 11 | Auditoria do BotTelegram: recursos e exceções | ⬜ | ⬜ | |
 | 12 | Consulta de CEP com cache local | ⬜ | ⬜ | |
 | 13 | API de tarefas com HttpServer | ⬜ | ⬜ | |
 | 14 | Monitor de sites | ⬜ | ⬜ | |
