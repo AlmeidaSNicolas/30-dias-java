@@ -1,7 +1,7 @@
 package Dia_03_Agenda_Consultas.Exceptions;
 
-public class DuracaoInvalidaException extends RuntimeException {
-    public DuracaoInvalidaException(String message) {
+public class AgendamentoInvalidoException extends RuntimeException {
+    public AgendamentoInvalidoException(String message) {
         super(message);
     }
 }
