@@ -5,7 +5,6 @@ import lombok.Getter;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 
 @Getter
 public class Consulta {
@@ -30,12 +29,12 @@ public class Consulta {
        LocalDateTime fim = inicio.plus(duracao);
 
        return fim;
-
     }
 
     public boolean sobrepor(Consulta outra){
         boolean estaTerminaDepoisDaOutraComecar = fim().isAfter(outra.inicio);
-        boolean SituacaoB = outra.fim().isAfter(inicio);
-        return estaTerminaDepoisDaOutraComecar && SituacaoB;
+        boolean estaTerminaAntes = outra.fim().isAfter(inicio);
+        return estaTerminaDepoisDaOutraComecar && estaTerminaAntes;
     }
+
 }
