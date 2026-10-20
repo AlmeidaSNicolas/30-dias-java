@@ -120,7 +120,7 @@ Para quando o pré-requisito de um dia ainda não chegou no curso. Requisitos e 
 | 01 | [Conta bancária com extrato](dia-01-conta-bancaria/) | ✅ | ✅ | 12/10/2026 |
 | 02 | [Carrinho de compras](dia-02-carrinho-compras/) | ⬜ | ✅ | |
 | 03 | [Agenda de consultas](dia-03-Agenda_Consultas/) | ✅ | ✅ | 16/10/2026 |
-| 04 | Validador de cadastro | ⬜ | ⬜ | |
+| 04 | [Validador de cadastro](dia-04-validadorCadastro/) | ✅ | ✅ | 20/10/2026 |
 | 05 | Relatório de vendas a partir de CSV | ⬜ | ⬜ | |
 | 06 | Estacionamento | ⬜ | ⬜ | |
 | 07 | Mini-banco no terminal | ⬜ | ⬜ | |
