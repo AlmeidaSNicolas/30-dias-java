@@ -13,6 +13,7 @@
         <module>dia-01-conta-bancaria</module>
         <module>dia-02-carrinho-compras</module>
         <module>dia-03-Agenda_Consultas</module>
+        <module>dia-04-validadorCadastro</module>
     </modules>
 
     <properties>
