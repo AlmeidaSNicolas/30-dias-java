@@ -1,6 +1,6 @@
 {
   "title": { "es": "30 dias Java", "en": "30 days java" },
-  "description": { "es": "Trenos en Java", "en": "Training java core" },
+  "description": { "es": "Entrenamiento en Java en Java", "en": "Training java core" },
   "stack": ["Java"],
   "demoUrl": "https://github.com/AlmeidaSNicolas/30-dias-java",
   "featured": true,
