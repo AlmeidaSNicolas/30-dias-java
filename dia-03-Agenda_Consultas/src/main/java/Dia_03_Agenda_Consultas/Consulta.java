@@ -33,7 +33,7 @@ public class Consulta {
 
     public boolean sobrepor(Consulta outra){
         boolean estaTerminaDepoisDaOutraComecar = fim().isAfter(outra.inicio);
-        boolean estaTerminaAntes = outra.fim().isAfter(inicio);
+        boolean aOutraTerminaAntesDessaComecar = outra.fim().isAfter(inicio);
         return estaTerminaDepoisDaOutraComecar && estaTerminaAntes;
     }
 
